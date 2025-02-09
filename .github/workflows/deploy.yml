@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write  # ✅ This allows GitHub Actions to push to gh-pages
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,7 +34,7 @@ jobs:
         run: |
           git config --global user.email "123191250+PrincepaulIzuogu@users.noreply.github.com"
           git config --global user.name "PrincepaulIzuogu"
-          git remote set-url origin https://$GH_TOKEN@github.com/PrincepaulIzuogu/valentines-app.git
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/PrincepaulIzuogu/valentines-app.git
           npm run deploy
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
