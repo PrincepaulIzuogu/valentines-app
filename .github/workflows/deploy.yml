@@ -25,7 +25,10 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: build
+        run: |
+          git config --global user.email "123191250+PrincepaulIzuogu@users.noreply.github.com"
+          git config --global user.name "PrincepaulIzuogu"
+          git remote set-url origin https://$GH_TOKEN@github.com/PrincepaulIzuogu/valentines-app.git
+          npm run deploy
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
