@@ -18,8 +18,11 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install Dependencies with Fix
+      - name: Install Dependencies
         run: npm install --legacy-peer-deps
+
+      - name: Install `gh-pages`
+        run: npm install -g gh-pages
 
       - name: Build Project
         run: npm run build
