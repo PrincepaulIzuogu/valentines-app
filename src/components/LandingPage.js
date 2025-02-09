@@ -11,7 +11,16 @@ const LandingPage = () => {
   return (
     <div className="landing-container">
       {/* Background Video */}
-      <video autoPlay loop muted className="background-video" id="bg-video">
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        className="background-video" 
+        playsInline /* Prevents fullscreen mode */ 
+        preload="auto" /* Ensures video loads early */ 
+        disablePictureInPicture /* Stops PiP mode */ 
+        disableRemotePlayback /* Prevents external playback */
+      >
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
