@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/valentines-app/static/css/main.fb598826.css",
+    "main.js": "/valentines-app/static/js/main.f7cf5faf.js",
+    "static/js/453.d2d1cdf3.chunk.js": "/valentines-app/static/js/453.d2d1cdf3.chunk.js",
+    "static/media/video_5.mp4": "/valentines-app/static/media/video_5.56fc7880e55e9b2c460b.mp4",
+    "static/media/video_6.mp4": "/valentines-app/static/media/video_6.8e45fc3f7c207cdb949f.mp4",
+    "static/media/video_1.mp4": "/valentines-app/static/media/video_1.5dc7dc6579236cb58ee4.mp4",
+    "static/media/video_2.mp4": "/valentines-app/static/media/video_2.e1281e8b218428bc22cf.mp4",
+    "static/media/audio_1.mp3": "/valentines-app/static/media/audio_1.b3efa740fb324da024df.mp3",
+    "static/media/video_3.mp4": "/valentines-app/static/media/video_3.ad78304b05cbb7ced804.mp4",
+    "static/media/img_7.jpeg": "/valentines-app/static/media/img_7.4dbcf2c4e0fafbe5f522.jpeg",
+    "static/media/img_5.jpeg": "/valentines-app/static/media/img_5.334324cbdc3b3a3deb24.jpeg",
+    "static/media/img_2.jpeg": "/valentines-app/static/media/img_2.4d7b000d7d0c0a416fce.jpeg",
+    "static/media/img_8.jpeg": "/valentines-app/static/media/img_8.6f28ac5cd9fbfc517c6d.jpeg",
+    "static/media/img_4.jpeg": "/valentines-app/static/media/img_4.e75ca7353097d09e7977.jpeg",
+    "static/media/img_12.jpg": "/valentines-app/static/media/img_12.eaac127d325166df49cf.jpg",
+    "static/media/img_10.jpeg": "/valentines-app/static/media/img_10.7f5322a9e94acb039ab7.jpeg",
+    "static/media/img_1.jpeg": "/valentines-app/static/media/img_1.fcb91d7bb27b9a5bb61f.jpeg",
+    "static/media/img_3.jpeg": "/valentines-app/static/media/img_3.d126c3ab5189a59ffe62.jpeg",
+    "static/media/img_6.jpeg": "/valentines-app/static/media/img_6.43e7250b56c203315274.jpeg",
+    "static/media/img_9.jpeg": "/valentines-app/static/media/img_9.e90e2d3578b7261226ea.jpeg",
+    "index.html": "/valentines-app/index.html",
+    "main.fb598826.css.map": "/valentines-app/static/css/main.fb598826.css.map",
+    "main.f7cf5faf.js.map": "/valentines-app/static/js/main.f7cf5faf.js.map",
+    "453.d2d1cdf3.chunk.js.map": "/valentines-app/static/js/453.d2d1cdf3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb598826.css",
+    "static/js/main.f7cf5faf.js"
+  ]
+}
