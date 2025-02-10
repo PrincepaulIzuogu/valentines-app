@@ -48,13 +48,6 @@ const LandingPage = () => {
         Your browser does not support the audio element.
       </audio>
 
-      {showIntro ? (
-        <div className="intro-section">
-          <h1>Welcome Odysseus, I developed this site from scratch just for you</h1>
-          <p>Let's make it more romantic for this day :)</p>
-          <button className="bounce-button" onClick={startExperience}>Click me, Ody!!!</button>
-        </div>
-      ) : (
         <div className="main-content">
           <h1>Does prince know Odysseus so well?</h1>
           <p>Come on, let's find out!!</p>
