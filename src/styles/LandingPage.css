@@ -72,3 +72,27 @@
   video::-webkit-media-controls {
     display: none !important;
   }
+
+
+.fade-text {
+  font-size: 34px;
+  color: white;
+  opacity: 1;
+  animation: fadeInOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
+
