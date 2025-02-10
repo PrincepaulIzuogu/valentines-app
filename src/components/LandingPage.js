@@ -56,7 +56,7 @@ const LandingPage = () => {
           <h1>Does prince know Odysseus so well?</h1>
           <p>Come on, let's find out!!</p>
           <Link to="/gallery">
-            <button className="bounce-button">Click me, Odysseus!</button>
+            <button className="bounce-button">Let's Go Odysseus!!</button>
           </Link>
         </div>
       )}
