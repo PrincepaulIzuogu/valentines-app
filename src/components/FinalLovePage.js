@@ -22,7 +22,7 @@ const FinalLovePage = () => {
       </video>
 
       <h1>I LOVE YOU ODY!!!</h1>
-      <p>Happy Valentine’s Day To Us</p>
+      <p>Happy Valentine’s Day From Prince!!!</p>
 
       <div className="image-container single-image">
         <img src={img11} alt="Love" className="image" />
