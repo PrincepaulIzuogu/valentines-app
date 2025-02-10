@@ -78,7 +78,7 @@
   font-size: 34px;
   color: white;
   opacity: 1;
-  animation: fadeInOut 6s ease-in-out forwards;
+  animation: fadeInOut 4s ease-in-out forwards;
 }
 
 @keyframes fadeInOut {
