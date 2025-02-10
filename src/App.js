@@ -14,7 +14,6 @@ import backgroundAudio from './assets/audios/audio_1.mp3';
 
 function App() {
   const audioRef = useRef(null);
-  const location = useLocation(); // Get current route for animations
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -45,22 +44,30 @@ function App() {
         Your browser does not support the audio element.
       </audio>
 
-      {/* Animated Page Transitions */}
-      <TransitionGroup>
-        <CSSTransition key={location.pathname} classNames="fade" timeout={500}>
-          <Routes location={location}>
-            <Route path="/" element={<InitialLandingPage />} />
-            <Route path="/landing" element={<LandingPage />} />
-            <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/nextpage" element={<NextGalleryPage />} />
-            <Route path="/finalpage" element={<FinalGalleryPage />} />
-            <Route path="/nextpage6" element={<CatGalleryPage />} />
-            <Route path="/firstmeet" element={<FirstMeetingPage />} />
-            <Route path="/final-love" element={<FinalLovePage />} />
-          </Routes>
-        </CSSTransition>
-      </TransitionGroup>
+      {/* Wrap Routes & Animations inside Router */}
+      <AnimatedRoutes />
     </Router>
+  );
+}
+
+function AnimatedRoutes() {
+  const location = useLocation(); // Now it's inside Router!
+
+  return (
+    <TransitionGroup>
+      <CSSTransition key={location.pathname} classNames="fade" timeout={500}>
+        <Routes location={location}>
+          <Route path="/" element={<InitialLandingPage />} />
+          <Route path="/landing" element={<LandingPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/nextpage" element={<NextGalleryPage />} />
+          <Route path="/finalpage" element={<FinalGalleryPage />} />
+          <Route path="/nextpage6" element={<CatGalleryPage />} />
+          <Route path="/firstmeet" element={<FirstMeetingPage />} />
+          <Route path="/final-love" element={<FinalLovePage />} />
+        </Routes>
+      </CSSTransition>
+    </TransitionGroup>
   );
 }
 
