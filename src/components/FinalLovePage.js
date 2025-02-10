@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/GalleryPage.css';
 import backgroundVideo from '../assets/videos/video_6.mp4';
 import img11 from '../assets/images/img_12.jpg';
@@ -27,6 +28,11 @@ const FinalLovePage = () => {
       <div className="image-container single-image">
         <img src={img11} alt="Love" className="image" />
       </div>
+
+      {/* Green Back Button */}
+      <Link to="/">
+        <button className="back-button">&larr; Back to First page</button>
+      </Link>
     </div>
   );
 };
