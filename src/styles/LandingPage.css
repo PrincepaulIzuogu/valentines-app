@@ -78,7 +78,7 @@
   font-size: 34px;
   color: white;
   opacity: 1;
-  animation: fadeInOut 2s ease-in-out forwards;
+  animation: fadeInOut 4s ease-in-out forwards;
 }
 
 @keyframes fadeInOut {
@@ -86,7 +86,11 @@
     opacity: 0;
     transform: scale(0.9);
   }
-  50% {
+  25% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  75% {
     opacity: 1;
     transform: scale(1);
   }
@@ -95,4 +99,3 @@
     transform: scale(1.1);
   }
 }
-
