@@ -16,7 +16,8 @@ const InitialLandingPage = () => {
   return (
     <div className="landing-container" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       {showText ? (
-        <h1 className="fade-text">I developed this site from scratch just for you!!!</h1>
+        <h1 className="fade-text">I developed this from scratch for you!</h1>
+        <p>I Hope You Love It :)</p>
       ) : (
         <>
           <h1>Welcome Odysseus!!!</h1>
