@@ -7,6 +7,7 @@ import FinalGalleryPage from './components/FinalGalleryPage';
 import CatGalleryPage from './components/CatGalleryPage';
 import FirstMeetingPage from './components/FirstMeetingPage';
 import FinalLovePage from './components/FinalLovePage';
+import InitialLandingPage from './components/InitialLandingPage';
 
 import backgroundAudio from './assets/audios/audio_1.mp3';
 
@@ -43,7 +44,8 @@ function App() {
       </audio>
 
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<InitialLandingPage />} />
+        <Route path="/landing" element={<LandingPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/nextpage" element={<NextGalleryPage />} />
         <Route path="/finalpage" element={<FinalGalleryPage />} />
