@@ -78,35 +78,24 @@
   font-size: 34px;
   color: white;
   opacity: 1;
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 4s steps(50, end), hold 2s 4s forwards, vanish 1s 6s forwards;
+  animation: fadeInOut 6s ease-in-out forwards;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes hold {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes vanish {
-  from {
-    opacity: 1;
-  }
-  to {
+@keyframes fadeInOut {
+  0% {
     opacity: 0;
+    transform: scale(0.9);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
   }
 }
