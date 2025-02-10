@@ -9,7 +9,7 @@ const InitialLandingPage = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowText(false);
-    }, 4000); // Hide text after 4 seconds
+    }, 3000); // Hide text after 4 seconds
     return () => clearTimeout(timeout);
   }, []);
 
