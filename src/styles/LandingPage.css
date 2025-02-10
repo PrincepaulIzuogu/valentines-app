@@ -81,7 +81,7 @@
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(40, end), hold 2s 2s forwards, vanish 1s 4s forwards;
+  animation: typing 4s steps(50, end), hold 2s 4s forwards, vanish 1s 6s forwards;
 }
 
 @keyframes typing {
