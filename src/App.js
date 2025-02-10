@@ -44,28 +44,30 @@ function App() {
         Your browser does not support the audio element.
       </audio>
 
-      {/* Wrap Routes & Animations inside Router */}
+      {/* Ensure Page Transitions Work Correctly */}
       <AnimatedRoutes />
     </Router>
   );
 }
 
 function AnimatedRoutes() {
-  const location = useLocation(); // Now it's inside Router!
+  const location = useLocation(); // Now properly wrapped inside Router
 
   return (
     <TransitionGroup>
       <CSSTransition key={location.pathname} classNames="fade" timeout={500}>
-        <Routes location={location}>
-          <Route path="/" element={<InitialLandingPage />} />
-          <Route path="/landing" element={<LandingPage />} />
-          <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/nextpage" element={<NextGalleryPage />} />
-          <Route path="/finalpage" element={<FinalGalleryPage />} />
-          <Route path="/nextpage6" element={<CatGalleryPage />} />
-          <Route path="/firstmeet" element={<FirstMeetingPage />} />
-          <Route path="/final-love" element={<FinalLovePage />} />
-        </Routes>
+        <div className="page"> {/* WRAP PAGE CONTENT TO AVOID WHITE SCREEN */}
+          <Routes location={location}>
+            <Route path="/" element={<InitialLandingPage />} />
+            <Route path="/landing" element={<LandingPage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
+            <Route path="/nextpage" element={<NextGalleryPage />} />
+            <Route path="/finalpage" element={<FinalGalleryPage />} />
+            <Route path="/nextpage6" element={<CatGalleryPage />} />
+            <Route path="/firstmeet" element={<FirstMeetingPage />} />
+            <Route path="/final-love" element={<FinalLovePage />} />
+          </Routes>
+        </div>
       </CSSTransition>
     </TransitionGroup>
   );
